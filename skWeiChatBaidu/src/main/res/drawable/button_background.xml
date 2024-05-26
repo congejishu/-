@@ -1,0 +1,20 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"> <!-- 按下状态 -->
+        <shape>
+            <solid android:color="#FF4081"/> <!-- 按下时的颜色 -->
+            <corners android:radius="18dp"/> <!-- 圆角 -->
+        </shape>
+    </item>
+    <item android:state_focused="true"> <!-- 获得焦点状态 -->
+        <shape>
+            <solid android:color="#FF8A00"/> <!-- 获焦时的颜色 -->
+            <corners android:radius="18dp"/> <!-- 圆角 -->
+        </shape>
+    </item>
+    <item> <!-- 默认状态 -->
+        <shape>
+            <solid android:color="#099FDE"/> <!-- 默认颜色 -->
+            <corners android:radius="18dp"/> <!-- 圆角 -->
+        </shape>
+    </item>
+</selector>

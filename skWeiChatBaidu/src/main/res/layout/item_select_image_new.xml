@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_switcha"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:maxWidth="400dp"
+    android:minWidth="@dimen/dp_150"
+    android:layout_margin="0.5dp"
+    android:layout_height="wrap_content">
+
+    <com.noober.background.view.BLImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        />
+
+    <TextView
+        android:id="@+id/checkmark"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="5.5dp"
+        android:layout_marginRight="5.5dp"
+        android:background="@drawable/sel_nor"
+        android:src="@drawable/sel_nor"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/app_white"
+        android:textSize="@dimen/sp_15_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/checkmark_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件路径:"
+        android:visibility="gone"
+        />
+
+
+</FrameLayout>

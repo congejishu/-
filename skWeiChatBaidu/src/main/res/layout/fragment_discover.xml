@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="@mipmap/icon_vip_title_bg1">
+
+
+        <ProgressBar
+            android:id="@+id/pb_title_center"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/dialog_loading"
+            android:indeterminateOnly="true"
+            android:visibility="gone" />
+
+        <com.ydd.zhichat.view.SkinImageView
+            android:id="@+id/iv_title_right"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="14dp" />
+
+        <com.ydd.zhichat.view.SkinImageView
+            android:id="@+id/iv_title_right_right"
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="180dp"
+            android:layout_marginRight="306dp"
+            android:layout_toStartOf="@+id/tv_title_left"
+            android:layout_toLeftOf="@id/iv_title_right"
+            android:padding="14dp"
+            android:src="@drawable/search_near"
+            android:visibility="gone" />
+
+        <com.ydd.zhichat.view.SkinTextView
+            android:id="@+id/tv_title_left"
+            android:layout_width="116dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/pb_title_center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="世界圈子"
+            android:textColor="@color/text_black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <com.ydd.zhichat.view.SkinTextView
+            android:id="@+id/tv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="100dp"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/title_right_text_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:divider="@drawable/me_divider"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/normal_bg">
+
+        <RelativeLayout
+            android:id="@+id/rel_find"
+            style="@style/IMTbleLine_UP"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <com.ydd.zhichat.view.LightImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/shenghuoquan"
+              />
+
+            <TextView
+                style="@style/IMTbleLine_TextName"
+                android:layout_centerVertical="true"
+                android:text="@string/x66" />
+
+            <ImageView
+                style="@style/IMTbleLine_ArrowImg.Me"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/me_chevron_right"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scanning"
+            style="@style/IMTbleLine_UP"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="40dp"
+                android:background="@color/gray_d3"/>
+
+            <com.ydd.zhichat.view.LightImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/saoyisao"
+               />
+
+            <TextView
+                style="@style/IMTbleLine_TextName"
+                android:layout_centerVertical="true"
+                android:text="@string/x67" />
+
+            <ImageView
+                style="@style/IMTbleLine_ArrowImg.Me"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/me_chevron_right"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/near_person"
+            style="@style/IMTbleLine_UP"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="40dp"
+                android:background="@color/gray_d3" />
+
+            <com.ydd.zhichat.view.LightImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/fujinderen" />
+
+            <TextView
+                style="@style/IMTbleLine_TextName"
+                android:layout_centerVertical="true"
+                android:text="@string/x68" />
+
+            <ImageView
+                style="@style/IMTbleLine_ArrowImg.Me"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/me_chevron_right"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@mipmap/icon_vip_title_bg1">>
+
+            <com.ydd.zhichat.view.SkinTextView
+                android:id="@+id/tv_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toEndOf="@+id/pb_title_center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="更多应用"
+                android:textColor="@color/text_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+
+        <ProgressBar
+            android:id="@+id/pb_title_center"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_title_center"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/dialog_loading"
+            android:indeterminateOnly="true"
+            android:visibility="gone" />
+
+        <com.ydd.zhichat.view.SkinImageView
+            android:id="@+id/iv_title_right_right"
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="180dp"
+            android:layout_marginRight="306dp"
+            android:layout_toStartOf="@+id/tv_title_left"
+            android:layout_toLeftOf="@id/iv_title_right"
+            android:padding="14dp"
+            android:src="@drawable/search_near"
+            android:visibility="gone" />
+
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView
+            android:id="@+id/rec_more"
+            android:layout_width="match_parent"
+            android:layout_height="491dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circle_pop_bg"
+    android:divider="@drawable/divider_vertical_bg"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@mipmap/menu_add_emoji"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableTintMode="screen"
+            android:text="阅后即焚(开启)"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:padding="7dp"
+            android:id="@+id/tv_zan"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/pop_line_for_black_bg"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@mipmap/menu_add_emoji"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableTintMode="screen"
+            android:text="置顶聊天(开启)"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:padding="7dp"
+            android:id="@+id/tv_zan"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/pop_line_for_black_bg"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@mipmap/menu_add_emoji"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableTintMode="screen"
+            android:text="消息免打扰(开启)"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:padding="7dp"
+            android:id="@+id/tv_zan"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/pop_line_for_black_bg"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@mipmap/menu_add_emoji"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableTintMode="screen"
+            android:text="消息过期自动销毁(永久)"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:padding="7dp"
+            android:id="@+id/tv_zan"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/pop_line_for_black_bg"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@mipmap/menu_add_emoji"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableTintMode="screen"
+            android:text="聊天背景"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:padding="7dp"
+            android:id="@+id/tv_zan"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/pop_line_for_black_bg"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@mipmap/menu_add_emoji"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableTintMode="screen"
+            android:text="清空聊天记录"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:padding="7dp"
+            android:id="@+id/tv_zan"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/pop_line_for_black_bg"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dp5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@mipmap/menu_add_emoji"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableTintMode="screen"
+            android:text="清空双方聊天记录"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:padding="7dp"
+            android:id="@+id/tv_zan"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/pop_line_for_black_bg"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

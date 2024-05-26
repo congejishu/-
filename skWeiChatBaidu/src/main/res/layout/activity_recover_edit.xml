@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_tv"
+            style="@style/EditTextWithLeftIcon55"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:width="@dimen/dp_1"
+            android:color="#c0c0c0"
+            android:gravity="top"
+            android:hint="请输入自动回复(100字内)"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:radius="6dp"
+            android:textSize="@dimen/sp_14">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        style="@style/BossGreenBtnSetting"
+        android:text="确定" />
+
+
+</LinearLayout>

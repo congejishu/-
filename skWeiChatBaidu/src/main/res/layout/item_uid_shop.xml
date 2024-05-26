@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/f3"
+    android:minWidth="@dimen/fj"
+    android:minHeight="@dimen/n6"
+    app:bl_corners_radius="@dimen/mx"
+    app:bl_solid_color="#fffffceb">
+
+    <ImageView
+        android:id="@+id/uuid_mark"
+        android:layout_width="@dimen/ip"
+        android:layout_height="@dimen/fo"
+        android:src="@drawable/l3_1" />
+
+    <TextView
+        android:id="@+id/shop_uid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dw"
+        android:text="202777"
+        android:textColor="@color/jd"
+        android:textSize="@dimen/xa" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/shop_uid_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/gw"
+        android:layout_marginBottom="@dimen/dw"
+        >
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ajx"
+            />
+        <TextView
+            android:id="@+id/shop_uid_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="555"
+            android:textSize="@dimen/x4"
+            android:textColor="#ffff725c"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

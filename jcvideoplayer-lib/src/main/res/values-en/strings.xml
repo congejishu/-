@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tips_not_wifi">You are currently using the mobile network, the player will continue to consume traffic</string>
+    <string name="tips_not_wifi_confirm">Resume</string>
+    <string name="tips_not_wifi_cancel">Stop play</string>
+    <string name="no_url">No mUrl</string>
+    <string name="sava_video" translatable="false">Save video</string>
+    <string name="f1" translatable="false">Video saved</string>
+    <string name="f2" translatable="false">Video saved</string>
+    <string name="f3" translatable="false">Video already exists</string>
+
+</resources>

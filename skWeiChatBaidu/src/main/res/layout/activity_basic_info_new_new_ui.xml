@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:elevation="0dp"
+                app:layout_behavior="com.ydd.zhichat.util.FixAppBarLayoutBehavior"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1px"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="20dp">
+
+                            <com.ydd.zhichat.view.HeadMeView
+                                android:id="@+id/avatar_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@color/black"/>
+
+                            <ImageView
+                                android:id="@+id/sexTagIv"
+                                android:layout_width="17dp"
+                                android:layout_height="17dp"
+                                android:layout_gravity="bottom|right"
+                                android:src="@mipmap/nearby_women"
+                                android:visibility="visible" />
+
+                        </FrameLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center_horizontal"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_remarks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="14dp"
+                                android:layout_marginRight="20dp"
+                                android:textColor="#010108"
+                                android:textSize="19sp"
+                                android:textStyle="bold"
+                                tools:text="测试标题" />
+
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/vip_mark"
+                                android:layout_width="20dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/bhl" />
+
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/uuid_mark"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/l3_1" />
+
+                        </LinearLayout>
+
+
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/userIntroView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginRight="20dp">
+
+                            <!-- 年龄 -->
+                            <TextView
+                                android:id="@+id/user_age_str"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:drawableLeft="@mipmap/user_detail_birthday_icon"
+                                android:drawablePadding="7dp"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:textColor="@color/color_999999"
+                                android:textSize="15sp"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toLeftOf="@+id/user_status_str" />
+
+                            <TextView
+                                android:id="@+id/user_status_str"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:drawableLeft="@mipmap/user_detail_time_icon"
+                                android:drawablePadding="7dp"
+                                android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:textColor="@color/color_999999"
+                                android:textSize="15sp"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintWidth_default="wrap"
+                                app:layout_constraintWidth_max="160dp" />
+
+                            <TextView
+                                android:id="@+id/user_address_str"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:drawableLeft="@mipmap/user_detail_address_icon"
+                                android:drawablePadding="7dp"
+                                android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:textColor="@color/color_999999"
+                                android:textSize="15sp"
+                                android:text="地区"
+                                app:layout_constraintHorizontal_bias="1"
+                                app:layout_constraintLeft_toRightOf="@+id/user_status_str"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintWidth_default="wrap" />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                        <!-- 操作栏 -->
+                        <LinearLayout
+                            android:id="@+id/addLayout01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="29dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/sendMsgLayout"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@mipmap/post_message_btn"
+                                android:drawablePadding="8dp"
+                                android:gravity="center_horizontal"
+                                android:text="发消息"
+                                android:textColor="@color/colorAccent0"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/voice_call_btn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@mipmap/voice_call_btn"
+                                android:drawablePadding="8dp"
+                                android:gravity="center_horizontal"
+                                android:text="语音通话"
+                                android:textColor="@color/colorAccent0"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/video_call_btn_btn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@mipmap/video_call_btn"
+                                android:drawablePadding="8dp"
+                                android:gravity="center_horizontal"
+                                android:text="视频通话"
+                                android:textColor="@color/colorAccent0"
+                                android:textSize="14sp" />
+
+
+                            <TextView
+                                android:id="@+id/mute_voice_btn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@drawable/selector_user_mute"
+                                android:drawablePadding="8dp"
+                                android:gravity="center_horizontal"
+                                android:text="消息免打扰"
+                                android:textColor="@color/colorAccent0"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/more_handle_btn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableTop="@mipmap/user_more_btn"
+                                android:drawablePadding="8dp"
+                                android:gravity="center_horizontal"
+                                android:text="更多操作"
+                                android:textColor="@color/colorAccent0"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" />
+
+                        <LinearLayout
+                            android:id="@+id/user_mobile_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="20dp"
+                            android:visibility="gone"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="电话"
+                                android:textColor="#010108"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/user_mobile_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="11dp"
+                                android:text="+86 130 0000 0000"
+                                android:textColor="@color/colorAccent0"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/SP_BG" />
+
+                        <TextView
+                            android:id="@+id/addLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_marginLeft="@dimen/dp_15"
+                            android:layout_marginRight="@dimen/dp_15"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:background="@drawable/login_btn_bg"
+                            android:gravity="center"
+                            android:text="加为好友"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/user_name_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="20dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的用户名"
+                                android:textColor="#010108"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/userNameText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="11dp"
+                                android:textColor="@color/colorAccent0"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/pingbiLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_marginLeft="@dimen/dp_15"
+                            android:layout_marginRight="@dimen/dp_15"
+                            android:background="@drawable/normal_btn_bg"
+                            android:gravity="center"
+                            android:text="屏蔽此人/取消屏蔽"
+                            android:textColor="@color/color_text_sub"
+                            android:textSize="17sp"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/SP_BG"/>
+
+                        <LinearLayout
+                            android:id="@+id/group_ann_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:id="@+id/group_ann_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="动态"
+                                android:textColor="#010108"
+                                android:textSize="15sp"/>
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerView"
+                                android:layout_width="match_parent"
+                                tools:listitem="@layout/item_image_layout"
+                                android:orientation="horizontal"
+                                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                                tools:itemCount="3"
+                                android:layout_marginLeft="@dimen/dp_15"
+                                android:layout_height="match_parent">
+
+                            </android.support.v7.widget.RecyclerView>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/ic_right"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.longsh.longshlibrary.PagerSlidingTabStrip
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white"
+                    android:textSize="11sp"
+                    app:tabBackground="@color/transparent"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/colorAccent0"
+                    app:tabIndicatorFullWidth="false"
+                    app:tabMaxWidth="0dp"
+                    app:tabRippleColor="@color/transparent"
+                    app:tabSelectedTextColor="@color/colorAccent0"
+                    app:tabTextColor="@color/color_999999"
+                    tools:ignore="MissingClass"/>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    tools:ignore="MissingConstraints">
+
+                </android.support.v4.view.ViewPager>
+
+            </android.support.design.widget.AppBarLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

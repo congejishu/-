@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/a_view_actionbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:paddingTop="5dp"
+        android:text="自动回复"
+        android:background="@color/Grey_200"
+        android:textColor="@color/Grey_600"
+        android:textSize="@dimen/two_level_content" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/recover_rl"
+        style="@style/IMTbleLine_UP">
+
+        <TextView
+            android:id="@+id/recover_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="回复状态"
+            android:textColor="@color/black"
+            android:textSize="@dimen/one_level_title" />
+
+        <ImageView
+            android:id="@+id/recover_chate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_selected"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <com.ydd.zhichat.view.PullToRefreshSlideListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normal_bg"
+        app:ptrAnimationStyle="flip"
+        app:ptrDrawableEnd="@drawable/default_ptr_rotate"
+        app:ptrDrawableStart="@drawable/default_ptr_flip"
+        app:ptrHeaderTextColor="@color/black"
+        app:ptrMode="both"
+        app:ptrOverScroll="false"
+        app:ptrScrollingWhileRefreshingEnabled="true"
+        app:ptrShowIndicator="false"
+        app:slideMode="right"
+        app:slideRightAction="reveal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:text="设置后,好友给你发消息，将收到自动回复内容。"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/save_btn"
+        style="@style/BossGreenBtnSetting"
+        android:text="保存" />
+
+</LinearLayout>

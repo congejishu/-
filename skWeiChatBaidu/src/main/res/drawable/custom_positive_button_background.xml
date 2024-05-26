@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/colorAccent"/> <!-- 按钮的填充颜色 -->
+    <corners android:radius="8dp"/> <!-- 圆角半径 -->
+    <padding android:left="16dp" android:right="16dp"
+             android:top="8dp" android:bottom="8dp"/> <!-- 内边距 -->
+</shape>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QrCode</string>
+    <string name="scanner_view_tip_text">Place the QR code/barcode in the box to automatically scan</string>
+    <string name="check_net">The current network is unavailable  n Please check the network settings</string>
+    <string name="x6">Select QR code from album</string>
+    <string name="a83">QR code/barcode</string>
+    <string name="b16">Decoding failed</string>
+</resources>

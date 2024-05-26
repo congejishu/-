@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ydd.zhichat.view.MergerStatusEx xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mergerStatus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:drawable_status="@drawable/title_gb"
+    >
+
+
+    <RelativeLayout
+        android:background="@drawable/title_gb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@mipmap/return_icon"
+            android:tint="@color/black"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxWidth="100dp"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/title_left_text_size" />
+
+
+
+        <com.ydd.zhichat.view.HeadView
+            android:id="@+id/avatar_imgd"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_title_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:maxWidth="200dp"
+            android:singleLine="true"
+            android:text="主标题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_title_center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:padding="9dp"
+            android:visibility="gone"
+            android:src="@mipmap/ic_no_speaker" />
+
+        <ImageView
+            android:id="@+id/iv_title_right"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp15" />
+
+        <ImageView
+            android:id="@+id/iv_title_right_right"
+            android:layout_width="@dimen/menu_item_size"
+            android:layout_height="@dimen/menu_item_size"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_title_right"
+            android:padding="@dimen/dp15"
+            android:src="@mipmap/ic_search_pressed"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:maxWidth="100dp"
+            android:maxLines="1"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="3dp"
+            android:text=""
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/sp_15_text_size" />
+
+    </RelativeLayout>
+
+</com.ydd.zhichat.view.MergerStatusEx>

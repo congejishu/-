@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_emotion"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_wte"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/record_time_rl"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:layout_weight="0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/lin" />
+
+            <TextView
+                android:id="@+id/record_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="60"
+                android:textSize="@dimen/BigTextSize" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/start_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+
+                android:id="@+id/textView4"
+                android:layout_width="380dp"
+                android:layout_height="30dp"
+
+                android:layout_below="@+id/start_iv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-203dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginBottom="152dp"
+                android:layout_toEndOf="@+id/start_iv"
+                android:hint="温馨提示：语音条需要获取麦克风权限，请开启后尝试！"
+                android:textSize="@dimen/BigTextSize"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/record_time_rl"
+                android:layout_width="150dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/lin" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="140dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/voice_complete1" />
+
+            <ImageView
+                android:id="@+id/start_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tape_normal" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_below="@+id/start_iv"
+
+                android:layout_marginStart="-86dp"
+                android:layout_marginTop="-121dp"
+                android:layout_marginEnd="82dp"
+                android:layout_marginBottom="152dp"
+                android:layout_toEndOf="@+id/start_iv"
+                android:text="········按住说话········"
+                android:textSize="@dimen/BigTextSize"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/operating_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/left_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/test_listen_voice"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/action_text_size" />
+
+            <TextView
+                android:id="@+id/right_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/app_black"
+                android:textSize="@dimen/action_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/b4v"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/kz2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <com.ydd.zhichat.view.SkinTextView
+                android:id="@+id/tv_title_left9"
+                android:layout_width="116dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/dp_50"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="神聪享聊"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:padding="@dimen/eh"
+            android:src="@drawable/eb" />
+
+        <TextView
+            android:id="@+id/ai_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/eh"
+            android:text="我的靓号"
+            android:textColor="@color/jd"
+            android:textSize="@dimen/x6"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <com.noober.background.view.BLRelativeLayout
+        android:id="@+id/awz"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b4v"
+        android:layout_marginLeft="@dimen/f3"
+        android:layout_marginTop="@dimen/eh"
+        android:layout_marginRight="@dimen/f3"
+        android:layout_marginBottom="@dimen/eh"
+        app:bl_corners_radius="@dimen/gk"
+        app:bl_solid_color="@color/ty"
+        app:bl_stroke_color="#ffffdb06"
+        app:bl_stroke_width="@dimen/dv">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp10"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/l5"
+                />
+
+            <EditText
+                android:id="@+id/tv_edit_text"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入靓号关键词"
+                android:inputType="text"
+                android:textSize="@dimen/sp_15_text_size" />
+
+        </LinearLayout>
+
+
+    </com.noober.background.view.BLRelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/auh"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:srlEnablePreviewInEditMode="false">
+
+        <in.srain.cube.views.GridViewWithHeaderAndFooter
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="@dimen/dp10"
+            android:listSelector="#00000000"
+            android:numColumns="2"
+            android:padding="30dp"
+            android:scrollbars="vertical"
+            android:verticalSpacing="@dimen/dp10"
+            tools:listitem="@layout/item_uid_shop" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>
+

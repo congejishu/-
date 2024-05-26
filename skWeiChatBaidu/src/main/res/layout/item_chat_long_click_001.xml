@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item_chat_text_ll"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_round_white"
+        android:elevation="4dp"
+        android:minWidth="100dp"
+        android:orientation="vertical"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/item_chat_copy_tv"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:drawableStart="@drawable/menu_copy"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:text="阅后即焚(开启)"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/three_level_content" />
+
+        <TextView
+            android:id="@+id/item_chat_replay_tv"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:drawableStart="@drawable/menu_quote"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:text="置顶聊天(开启)"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/three_level_content" />
+
+        <TextView
+            android:id="@+id/item_chat_edit"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:drawableStart="@drawable/menu_edit"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingHorizontal="16dp"
+            android:text="消息免打扰(开启)"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/three_level_content" />
+
+        <TextView
+            android:id="@+id/item_chat_relay_tv"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:drawableStart="@drawable/menu_zhuanfa"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:text="消息过期自动销毁(永久)"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/three_level_content" />
+
+        <TextView
+            android:id="@+id/collection_other"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:drawableStart="@drawable/menu_shoucang1_disable"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:text="聊天背景"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/three_level_content" />
+
+        <TextView
+            android:id="@+id/item_chat_collection_tv"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingHorizontal="16dp"
+            android:text="清空聊天记录"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/three_level_content" />
+
+        <TextView
+            android:id="@+id/item_chat_more_select"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:drawableStart="@drawable/menu_duoxuankuang"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingHorizontal="16dp"
+            android:text="清空双方聊天记录"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/three_level_content" />
+    </LinearLayout>
+</FrameLayout>

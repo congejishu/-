@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#c471ed" android:state_pressed="true"/> <!-- 按下状态 -->
+    <item android:color="#12c2e9" android:state_focused="true"/> <!-- 聚焦状态 -->
+    <item android:color="#f64f59"/> <!-- 默认状态 -->
+</selector>

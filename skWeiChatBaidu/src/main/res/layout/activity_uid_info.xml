@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff">
+    <include layout="@layout/a_view_actionbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        >
+
+        <RelativeLayout
+            android:id="@+id/hr"
+            android:layout_width="fill_parent"
+            android:layout_height="168dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/l01">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/uuid_mark"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/l3_1" />
+
+                <TextView
+                    android:id="@+id/uid_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6666666"
+                    android:textColor="#ff363636"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/q"
+                android:layout_width="85dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="139dp"
+                android:text="神聪享聊"
+                android:textColor="#ff363636"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/q7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="14dp"
+                android:text="使用期限：永久"
+                android:textColor="#ff363636"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/pay_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="14dp"
+                android:text="价值:1000000金币"
+                android:textColor="#ff363636"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/amz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hr"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="14dp"
+            android:text="靓号特权"
+            android:textColor="#ff363636"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        <LinearLayout android:orientation="vertical"
+            android:id="@+id/amy"
+            android:paddingBottom="@dimen/dp15"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_below="@id/amz" />
+
+        <TextView
+            android:id="@+id/mb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fq"
+            android:layout_below="@id/amy"
+            android:background="#fff8f8f8"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="1.购买靓号后，将替换当前神聪享聊号 ，展示最新靓号为随时聊号。 好友将通过新的随时聊号查找添加你为好友；\n2. 靓号使用期限为永久； \n3.如随聊账号被封禁，注销等行为，靓号将会被回收； \n4.靓号下单后将无法转让、退款。"
+            android:textColor="#ff9c9c9c"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout android:orientation="horizontal"
+            android:id="@+id/fq"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/pay_num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14dp"
+                android:text="100000000金币"
+                android:textColor="#ff363636"
+                android:textSize="17sp" />
+
+            <com.noober.background.view.BLTextView
+                android:id="@+id/buy_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="14dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="10dp"
+                android:text="立即兑换"
+                android:textColor="#ff363636"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:bl_corners_radius="18dp"
+                app:bl_pressed_solid_color="#ffc6aa02"
+                app:bl_unPressed_solid_color="#ffffdb06" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

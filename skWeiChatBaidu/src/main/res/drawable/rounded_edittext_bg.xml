@@ -1,0 +1,12 @@
+<!-- res/drawable/bottom_inset_rounded_corners.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#1671FE"/> <!-- 或者设置为透明 "@android:color/transparent" 来模拟内圆角 -->
+            <corners android:topRightRadius="0dp"
+                android:topLeftRadius="0dp"
+                android:bottomRightRadius="0dp"
+                android:bottomLeftRadius="0dp"/> <!-- 底部圆角 -->
+        </shape>
+    </item>
+</layer-list>
